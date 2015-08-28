@@ -1,3 +1,4 @@
+
 package datamanagement;
 
 /**
@@ -55,6 +56,7 @@ public final class Unit implements IUnit {
 		return this.UN;
 	}
 
+<<<<<<< HEAD
     /**
      *Setter method for PsCutoff1
      * @param cutoff:float
@@ -143,10 +145,46 @@ public final class Unit implements IUnit {
      */
     @Override
 	public float getHdCutoff() {
+=======
+	public void setPassCutoff(float cutoff) {
+		this.co2 = cutoff;
+	}
+
+	public float getPassCutoff() {
+		return this.co2;
+	}
+
+	public void setCreditCutoff(float cutoff) {
+		this.co1 = cutoff;
+	}
+
+	public float getCreditCutoff() {
+		return this.co1;
+	}
+
+	public void setDistinctionCutoff(float cutoff) {
+		this.co4 = cutoff;
+	}
+
+	public float getDistinctionCutoff() {
+		return this.co4;
+	}
+
+	public void HighDistinctionCutoff(float cutoff) {
+		this.co3 = cutoff;
+	}
+
+	public void setHighDistinctionCutoff(float cutoff) {
+		this.co3 = cutoff;
+	}
+
+	public float getHighDistinctionCutoff() {
+>>>>>>> origin/akila
 		return this.co3;
 
 	}
 
+<<<<<<< HEAD
     /**
      *setter method for AeCutoff
      * @param cutoff:float
@@ -164,6 +202,13 @@ public final class Unit implements IUnit {
      */
     @Override
 	public float getAeCutoff() {
+=======
+	public void setAlternativeExitCutoff(float cutoff) {
+		this.co5 = cutoff;
+	}
+
+	public float getAlternativeExitCutoff() {
+>>>>>>> origin/akila
 		return this.co5;
 	}
 
@@ -186,7 +231,7 @@ public final class Unit implements IUnit {
     @Override
 	public IStudentUnitRecord getStudentRecord(int studentID) {
 		for (IStudentUnitRecord r : rs) {
-			if (r.getStudentID() == studentID)
+			if (r.getStudentId() == studentID)
 				return r;
 		}
 		return null;
@@ -201,6 +246,7 @@ public final class Unit implements IUnit {
 		return rs;
 	}
 
+<<<<<<< HEAD
     /**
      *Implements method from IUnit
      * @return Asg1Weight:int
@@ -216,6 +262,15 @@ public final class Unit implements IUnit {
      */
     @Override
 	public int getAsg2Weight() {
+=======
+	@Override
+	public int getAssignment1Weight() {
+		return a1;
+	}
+
+	@Override
+	public int getAssignment2Weight() {
+>>>>>>> origin/akila
 		return a2;
 	}
 

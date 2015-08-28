@@ -11,7 +11,11 @@ public class UnitManager {
 
 	private static UnitManager self = null;
 
+<<<<<<< HEAD
 	private final UnitMap UM;
+=======
+	private UnitMap getUnitManager;
+>>>>>>> origin/akila
 
 	public static UnitManager UM() 
         {
@@ -24,11 +28,11 @@ public class UnitManager {
 	}
 
 	private UnitManager() {
-		UM = new UnitMap();
+		getUnitManager = new UnitMap();
 	}
 
 	public IUnit getUnit(String uc) {
-		IUnit iu = UM.get(uc);
+		IUnit iu = getUnitManager.get(uc);
 		return iu != null ? iu : createUnit(uc);
 
 	}
@@ -52,7 +56,7 @@ public class UnitManager {
 						Integer
 								.parseInt(el.getAttributeValue("examwgt")), StudentUnitRecordManager
 								.instance().getRecordsByUnit(unitCode));
-				UM.put(iu.getUnitCode(), iu);
+				getUnitManager.put(iu.getUnitCode(), iu);
 				return iu;
 			}
 
