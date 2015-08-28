@@ -1,5 +1,9 @@
 package datamanagement;
-
+/**
+ *
+ * @author Akila
+ */
+//import libraries 
 import java.util.List;
 import org.jdom.*;
 
@@ -7,11 +11,15 @@ public class UnitManager {
 
 	private static UnitManager self = null;
 
-	private UnitMap UM;
+	private final UnitMap UM;
 
-	public static UnitManager UM() {
-		if (self == null)
-			self = new UnitManager();
+	public static UnitManager UM() 
+        {
+		if (self == null) {
+                self = new UnitManager();
+            } 
+            else {
+            }
 		return self;
 	}
 
@@ -36,19 +44,13 @@ public class UnitManager {
 
 				slist = null;
 				iu = new Unit(el.getAttributeValue("uid"),
-						el.getAttributeValue("name"), Float.valueOf(
-								el.getAttributeValue("ps")).floatValue(), Float
-								.valueOf(el.getAttributeValue("cr"))
-								.floatValue(), Float.valueOf(
-								el.getAttributeValue("di")).floatValue(), Float
-								.valueOf(el.getAttributeValue("hd"))
-								.floatValue(), Float.valueOf(
-								el.getAttributeValue("ae")).floatValue(),
-						Integer.valueOf(el.getAttributeValue("asg1wgt"))
-								.intValue(), Integer.valueOf(
-								el.getAttributeValue("asg2wgt")).intValue(),
-						Integer.valueOf(el.getAttributeValue("examwgt"))
-								.intValue(), StudentUnitRecordManager
+						el.getAttributeValue("name"), Float.parseFloat(el.getAttributeValue("ps")), Float
+								.parseFloat(el.getAttributeValue("cr")), Float.parseFloat(el.getAttributeValue("di")), Float
+								.parseFloat(el.getAttributeValue("hd")), Float.parseFloat(el.getAttributeValue("ae")),
+						Integer
+								.parseInt(el.getAttributeValue("asg1wgt")), Integer.parseInt(el.getAttributeValue("asg2wgt")),
+						Integer
+								.parseInt(el.getAttributeValue("examwgt")), StudentUnitRecordManager
 								.instance().getRecordsByUnit(unitCode));
 				UM.put(iu.getUnitCode(), iu);
 				return iu;
