@@ -9,7 +9,10 @@ public class StudentProxy implements IStudent {
 
     private String lastName;
     private StudentManager studentManager;
-    
+  
+    //changed variables
+    //changed methods
+  
     // StudentProxy constructor. Sets the relevant variables to the passed
     // integers. Additionally, retrieves the StudentManager instance.
     public StudentProxy( Integer studentId, String firstName, String lastName) {
@@ -44,7 +47,8 @@ public class StudentProxy implements IStudent {
         
         studentManager.getStudent(studentId).setLastName(lastName);}
 
-    
+  //line indentation
+   
     
      // The method addUnitRecord adds a single passed student unit record to
      // the StudentManager of this StudentProxy object.  
@@ -68,6 +72,7 @@ public class StudentProxy implements IStudent {
     }
 }
 
+ //line indentation
 
 
 <!DOCTYPE html>
@@ -124,6 +129,7 @@ public class StudentProxy implements IStudent {
     <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2/index-8f6585fb18612dd4cf67dd0b3aac6f1e0cf5c9b915e8bfa5989c581f53d36e01.css" media="all" rel="stylesheet" />
     
     
+ //line indentation
 
 
     <meta http-equiv="x-pjax-version" content="5b3ac96571a753d47620995a7eeb640f">
@@ -144,6 +150,7 @@ public class StudentProxy implements IStudent {
       
       
       
+ //line indentation
 
 
 
@@ -952,6 +959,10 @@ public class StudentProxy implements IStudent {
         <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
         <td id="LC37" class="blob-code blob-code-inner js-file-line">
 </td>
+
+ //line indentation
+
+
       </tr>
       <tr>
         <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
@@ -1087,6 +1098,8 @@ public class StudentProxy implements IStudent {
 
 </div>
 
+ //line indentation
+ 
 <a href="#jump-to-line" rel="facebox[.linejump]" data-hotkey="l" style="display:none">Jump to Line</a>
 <div id="jump-to-line" style="display:none">
   <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="" class="js-jump-to-line-form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
@@ -1102,6 +1115,8 @@ public class StudentProxy implements IStudent {
 
 
     </div><!-- /.wrapper -->
+
+ //line indentation
 
       <div class="container">
   <div class="site-footer" role="contentinfo">
@@ -1130,6 +1145,8 @@ public class StudentProxy implements IStudent {
   </div>
 </div>
 
+ //line indentation
+
 
     <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
   <div class="fullscreen-container js-suggester-container">
@@ -1153,7 +1170,8 @@ public class StudentProxy implements IStudent {
 
 
 
-    
+ //line indentation
+   
     
 
     <div id="ajax-error-message" class="flash flash-error">
@@ -1175,6 +1193,3 @@ public class StudentProxy implements IStudent {
   </body>
 </html>
 
-//line indentation
-//changed methods
-//changed variables
