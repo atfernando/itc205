@@ -62,13 +62,7 @@ IStudent is;
     StudentUnitRecordList ur = StudentUnitRecordManager.instance().getRecordsByUnit(uc);
         for (IStudentUnitRecord S : ur) {
             
-            
-            
-            
-            
-            
-            
-            
+//line indentation            
             
             is = createStudentProxy(new Integer(S.getStudentID()));
     s.put(is.getID(), is);}
