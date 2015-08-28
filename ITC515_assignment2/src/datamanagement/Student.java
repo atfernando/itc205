@@ -10,19 +10,20 @@ public Student( Integer id, String fn, String ln, StudentUnitRecordList su ) { t
         su == null ? new StudentUnitRecordList() : 
                 su;
 }
-
+// line indentation 
+//changed variables
     public Integer getID() { return this.id; 
 } public String getFirstName() { 
 return fn; }
-
+//changed variables
     public void setFirstName( String firstName ) { 
 this.fn = firstName; }
-
+//changed variables
 public String getLastName() { 
     return ln; }
     public void setLastName( String lastName ) { 
 
-        
+//changed variables
 this.ln = lastName; }
 
 public void addUnitRecord( IStudentUnitRecord record ) { su.add(record); }
